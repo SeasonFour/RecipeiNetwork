@@ -77,7 +77,7 @@ public class MyRecipie extends AppCompatActivity {
             }
         });
 
-        drinks.setOnClickListener(gitnew View.OnClickListener() {
+        drinks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent c = new Intent(MyRecipie.this,Drinks.class);
