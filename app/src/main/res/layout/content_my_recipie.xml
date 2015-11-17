@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/home"
+        android:text="@string/myrecipie"
         android:textSize="@dimen/guillotine_item_text_size"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"

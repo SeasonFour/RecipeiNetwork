@@ -26,8 +26,26 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.projects.recipenetwork.Home" />
-
-
+        </activity>
+        <activity
+            android:name=".Dishes"
+            android:label="@string/title_activity_dishes"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Drinks"
+            android:label="@string/title_activity_drinks"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Create_Recipie"
+            android:label="@string/title_activity_create__recipie"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".MyRecipie"
+            android:label="@string/title_activity_my_recipie"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 
