@@ -1,5 +1,6 @@
 package com.projects.recipenetwork;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import com.yalantis.guillotine.animation.GuillotineAnimation;
 
@@ -15,6 +17,12 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 public class Drinks extends AppCompatActivity {
+
+    LinearLayout Home;
+    LinearLayout dishes;
+    LinearLayout drinks;
+    LinearLayout crtrecipie;
+    LinearLayout myRecipie;
 
     private static final long RIPPLE_DURATION = 250;
 
@@ -48,6 +56,51 @@ public class Drinks extends AppCompatActivity {
                 .setClosedOnStart(true)
                 .build();
 
-    }
+        Home=(LinearLayout) findViewById(R.id.home_group);
+        dishes=(LinearLayout) findViewById(R.id.dishes_group);
+        drinks=(LinearLayout) findViewById(R.id.drinks_group);
+        crtrecipie=(LinearLayout) findViewById(R.id.crtrecipie_group);
+        myRecipie=(LinearLayout) findViewById(R.id.myrecipie_group);
 
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(Drinks.this,Home.class);
+                startActivity(a);
+            }
+        });
+        dishes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent b = new Intent(Drinks.this,Dishes.class);
+                startActivity(b);
+            }
+        });
+
+        drinks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent c = new Intent(Drinks.this,Drinks.class);
+                startActivity(c);
+            }
+        });
+
+        crtrecipie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent d = new Intent(Drinks.this, Create_Recipie.class);
+                startActivity(d);
+            }
+        });
+
+        myRecipie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent e = new Intent(Drinks.this, MyRecipie.class);
+                startActivity(e);
+            }
+        });
+
+
+    }
 }

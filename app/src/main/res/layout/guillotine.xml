@@ -17,7 +17,7 @@
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
-        android:id="@+id/profile_group"
+        android:id="@+id/home_group"
         style="@style/LinearLayout.GuillotineItem"
         android:layout_marginTop="@dimen/guillotine_medium_margin">
 
@@ -27,11 +27,11 @@
 
         <com.yalantis.guillotine.sample.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="@string/profile" />
+            android:text="@string/home" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/feed_group"
+        android:id="@+id/dishes_group"
         style="@style/LinearLayout.GuillotineItem">
 
         <ImageView
@@ -40,11 +40,11 @@
 
         <com.yalantis.guillotine.sample.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="@string/feed" />
+            android:text="@string/dishes" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/activity_group"
+        android:id="@+id/drinks_group"
         style="@style/LinearLayout.GuillotineItem">
 
         <ImageView
@@ -52,16 +52,25 @@
             android:src="@drawable/ic_activity_active" />
 
         <com.yalantis.guillotine.sample.widget.CanaroTextView
-            style="@style/TextView.GuillotineItem.Selected"
-            android:text="@string/activity" />
+            style="@style/TextView.GuillotineItem"
+            android:text="@string/drinks" />
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/guillotine_divider_height" />
+    <LinearLayout
+        android:id="@+id/myrecipie_group"
+        style="@style/LinearLayout.GuillotineItem">
+
+        <ImageView
+            style="@style/ImageView.GuillotineItem"
+            android:src="@drawable/ic_activity_active" />
+
+        <com.yalantis.guillotine.sample.widget.CanaroTextView
+            style="@style/TextView.GuillotineItem"
+            android:text="@string/myrecipie" />
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/settings_group"
+        android:id="@+id/crtrecipie_group"
         style="@style/LinearLayout.GuillotineItem">
 
         <ImageView
@@ -70,6 +79,12 @@
 
         <com.yalantis.guillotine.sample.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
-            android:text="@string/settings" />
+            android:text="@string/crtrecepie" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/guillotine_divider_height" />
+
+
 </LinearLayout>

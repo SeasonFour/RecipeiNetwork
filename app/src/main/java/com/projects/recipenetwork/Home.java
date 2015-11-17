@@ -1,5 +1,6 @@
 package com.projects.recipenetwork;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -55,7 +56,51 @@ public class Home extends AppCompatActivity {
                 .setClosedOnStart(true)
                 .build();
 
-        Home=(LinearLayout)
+        Home=(LinearLayout) findViewById(R.id.home_group);
+        dishes=(LinearLayout) findViewById(R.id.dishes_group);
+        drinks=(LinearLayout) findViewById(R.id.drinks_group);
+        crtrecipie=(LinearLayout) findViewById(R.id.crtrecipie_group);
+        myRecipie=(LinearLayout) findViewById(R.id.myrecipie_group);
+
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(Home.this,Home.class);
+                startActivity(a);
+            }
+        });
+       dishes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent b = new Intent(Home.this,Dishes.class);
+                startActivity(b);
+            }
+        });
+
+        drinks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent c = new Intent(Home.this,Drinks.class);
+                startActivity(c);
+            }
+        });
+
+        crtrecipie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent d = new Intent(Home.this,Create_Recipie.class);
+                startActivity(d);
+            }
+        });
+
+        myRecipie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent e = new Intent(Home.this,MyRecipie.class);
+                startActivity(e);
+            }
+        });
+
 
     }
 }
