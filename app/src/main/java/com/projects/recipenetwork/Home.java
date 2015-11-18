@@ -11,12 +11,20 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
 import com.yalantis.guillotine.animation.GuillotineAnimation;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import io.fabric.sdk.android.Fabric;
 
 public class Home extends AppCompatActivity {
+
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "cEr8HYegtclQ1afSTzBo2U2HP";
+    private static final String TWITTER_SECRET = "Hvmi1qDtJx7n5j3pnVWUNgE4vhtWSVaGHM3cOeySjApQammCrS";
+
 
     LinearLayout Home;
     LinearLayout dishes;
@@ -38,6 +46,8 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.content_home);
         ButterKnife.inject(this);
 

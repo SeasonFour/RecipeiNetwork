@@ -10,13 +10,11 @@
     tools:showIn="@layout/activity_login" tools:context="com.projects.recipenetwork.Login">
 
 
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="@string/twitter_button"
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
         android:id="@+id/twitter_login_button"
-        android:layout_marginTop="147dp"
-        android:textSize="20sp"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
 
 </RelativeLayout>
