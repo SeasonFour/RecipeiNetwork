@@ -1,4 +1,4 @@
-package com.yalantis.guillotine.sample;
+package com.projects.recipenetwork;
 
 import android.app.Application;
 import android.graphics.Typeface;

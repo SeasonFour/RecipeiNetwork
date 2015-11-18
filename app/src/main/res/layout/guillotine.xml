@@ -25,7 +25,7 @@
             style="@style/ImageView.GuillotineItem"
             android:src="@drawable/home" />
 
-        <com.yalantis.guillotine.sample.widget.CanaroTextView
+        <com.projects.recipenetwork.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
             android:text="@string/home" />
     </LinearLayout>
@@ -38,7 +38,7 @@
             style="@style/ImageView.GuillotineItem"
             android:src="@drawable/dishes" />
 
-        <com.yalantis.guillotine.sample.widget.CanaroTextView
+        <com.projects.recipenetwork.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
             android:text="@string/dishes" />
     </LinearLayout>
@@ -51,7 +51,7 @@
             style="@style/ImageView.GuillotineItem"
             android:src="@drawable/drinks" />
 
-        <com.yalantis.guillotine.sample.widget.CanaroTextView
+        <com.projects.recipenetwork.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
             android:text="@string/drinks" />
     </LinearLayout>
@@ -64,7 +64,7 @@
             style="@style/ImageView.GuillotineItem"
             android:src="@drawable/recipez" />
 
-        <com.yalantis.guillotine.sample.widget.CanaroTextView
+        <com.projects.recipenetwork.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
             android:text="@string/myrecipie" />
     </LinearLayout>
@@ -77,7 +77,7 @@
             style="@style/ImageView.GuillotineItem"
             android:src="@drawable/create" />
 
-        <com.yalantis.guillotine.sample.widget.CanaroTextView
+        <com.projects.recipenetwork.widget.CanaroTextView
             style="@style/TextView.GuillotineItem"
             android:text="@string/crtrecepie" />
     </LinearLayout>

@@ -1,10 +1,10 @@
-package com.yalantis.guillotine.sample.widget;
+package com.projects.recipenetwork.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.yalantis.guillotine.sample.App;
+import com.projects.recipenetwork.App;
 
 /**
  * Created by Dmytro Denysenko on 5/6/15.

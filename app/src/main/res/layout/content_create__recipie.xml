@@ -1,78 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/guilotine_toolbar"/>
-
-    <com.yalantis.guillotine.sample.widget.CanaroTextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/title_activity_create__recipie"
-        android:textColor="#fff"
-        android:textSize="@dimen/guillotine_item_text_size"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:id="@+id/view" />
+        android:orientation="vertical"
+        android:id="@+id/top">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_marginTop="100dp"
-        android:text="Enter title..."
-        android:layout_below="@+id/view"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText2" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:contentInsetStart="0dp"
+            style="@style/Toolbar">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:layout_marginTop="30dp"
-        android:text="Estimated time..."
-        android:layout_below="@+id/editText"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText3" />
+            <ImageView
+                android:id="@+id/content_hamburger"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/ic_menu_90" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"
-        android:text="Ingredients..." />
+            <com.projects.recipenetwork.widget.CanaroTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_activity_create__recipie"
+                android:textSize="@dimen/guillotine_item_text_size"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:textColor="#fff"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/editText3"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="38dp"
-        android:text="Recipe..." />
+        </android.support.v7.widget.Toolbar>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_below="@+id/view"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+    </LinearLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="57dp">
 
-</RelativeLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_marginTop="30dp"
+            android:text="Enter title..."
+
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/editText2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_marginTop="30dp"
+            android:text="Estimated time..."
+            android:layout_below="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/editText3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:text="Ingredients..." />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="38dp"
+            android:text="Recipe..." />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

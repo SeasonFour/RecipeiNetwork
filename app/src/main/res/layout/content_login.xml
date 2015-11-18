@@ -8,7 +8,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@drawable/bgg_image"
-        android:alpha=".8"
+        android:alpha="1"
         android:cropToPadding="false" />
 
 
@@ -30,7 +30,8 @@
         android:textColor="#fff"
         android:textSize="50dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,7 +42,8 @@
         android:textSize="50dp"
         android:textColor="#fff"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

@@ -1,19 +1,19 @@
 <resources>>
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@color/guillotine_background</item>
-    </style>
-
-    <!--<style name="AppThemeG" parent="Theme.Guillotine"/>-->
-
-    <!--<style name="Theme.Guillotine" parent="Theme.AppCompat.NoActionBar">-->
-        <!--<item name="android:colorPrimaryDark">@color/guillotine_background</item>-->
-        <!--<item name="android:colorPrimary">@color/guillotine_background_dark</item>-->
+    <!--<style name="AppTheme.NoActionBar">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
         <!--<item name="android:windowContentOverlay">@null</item>-->
-        <!--<item name="android:windowNoTitle">true</item>-->
-        <!--<item name="android:windowActionBar">false</item>-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@color/guillotine_background</item>-->
     <!--</style>-->
+
+    <style name="AppThemeG" parent="Theme.Guillotine"/>
+
+    <style name="Theme.Guillotine" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorPrimaryDark">@color/guillotine_background</item>
+        <item name="android:colorPrimary">@color/guillotine_background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
 </resources>
