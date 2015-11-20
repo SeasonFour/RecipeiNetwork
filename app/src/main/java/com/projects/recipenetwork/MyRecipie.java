@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +14,9 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import com.yalantis.guillotine.animation.GuillotineAnimation;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -23,9 +28,10 @@ public class MyRecipie extends AppCompatActivity {
     LinearLayout drinks;
     LinearLayout crtrecipie;
     LinearLayout myRecipie;
+    private List<Recipe> recipes;
+    private RecyclerView rv;
 
     private static final long RIPPLE_DURATION = 250;
-
 
     @InjectView(R.id.toolbar)
     Toolbar toolbar;
@@ -101,7 +107,26 @@ public class MyRecipie extends AppCompatActivity {
             }
         });
 
+        //Recycler View
+        rv = (RecyclerView) findViewById(R.id.rv);
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        rv.setLayoutManager(llm);
+        rv.setHasFixedSize(true);
 
+        initializeData();
+        initializeAdapter();
+    }
+
+    private void initializeData(){
+        recipes = new ArrayList<>();
+        recipes.add(new Recipe("Pilau", "Kenyan Style Rice", R.drawable.pilau));
+        recipes.add(new Recipe("Samosa", "Kenyan Samosas", R.drawable.samosas));
+        recipes.add(new Recipe("bahjia", "Kenyan Bahjias", R.drawable.bahjias));
+    }
+
+    private void initializeAdapter(){
+        MyRecipe_Adapter adapter = new MyRecipe_Adapter(recipes);
+        rv.setAdapter(adapter);
     }
 
 }
